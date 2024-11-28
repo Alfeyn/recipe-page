@@ -1,0 +1,196 @@
+@font-face {
+    font-family: 'Young Serif';
+    src: url('./../fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('./../fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+    --Brown-800: hsl(14, 45%, 36%);
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+}
+
+body {
+    width: 100vw;
+    height: auto;
+    background-color: var(--Stone-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    color: var(--Stone-600);
+}
+
+.main-container {
+    width: 48vw;
+    background-color: var(--White);
+    padding: 40px;
+    margin: 10vh;
+    border-radius: 10px;
+}
+
+.main-container div {
+    padding: 20px 0;
+}
+
+.main-container .recipe-details img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.main-container .recipe-details h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: 'Young Serif', serif;
+    margin-bottom: 20px;
+    color: var(--Stone-900);
+}
+
+.main-container .preparation {
+    padding: 40px;
+}
+
+.main-container .ingredient,
+.main-container .instruction {
+    border-bottom: 1px solid var(--Stone-150);
+}
+
+.main-container .preparation .title {
+    font-size: 1.2rem;
+    color: var(--Rose-800);
+    margin-bottom: 10px;
+}
+
+.main-container .ingredient .title,
+.main-container .instruction .title,
+.main-container .nutrition .title {
+    font-size: 1.8rem;
+    font-family: 'Young Serif', serif;
+    font-weight: 500;
+    color: var(--Brown-800);
+    margin-bottom: 10px;
+
+}
+
+.main-container .preparation .preparation-list,
+.main-container .ingredient .ingredient-list,
+.main-container .instruction .instruction-list {
+    list-style: none;
+}
+
+.main-container .instruction .instruction-list {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.main-container .instruction .instruction-list li {
+    position: relative;
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.main-container .preparation .preparation-list li::before,
+.main-container .ingredient .ingredient-list li::before {
+    content: '.';
+    color: var(--Brown-800);
+    font-size: 1.8rem;
+    margin-right: 25px;
+}
+
+.main-container .instruction .instruction-list li::marker {
+    color: var(--Brown-800);
+    font-weight: bold;
+}
+
+li>b {
+    font-weight: 800;
+}
+
+.main-container .nutrition p {
+    margin-bottom: 20px;
+}
+
+.main-container .nutrition .nutrition-list {
+    width: 100%;
+}
+
+.main-container .nutrition .nutrition-list tr {
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--Stone-150);
+    display: flex;
+}
+
+.main-container .nutrition .nutrition-list tr td {
+    width: 50%;
+}
+
+.main-container .nutrition .nutrition-list tr td.cell-2 {
+    color: var(--Brown-800);
+    font-weight: 600;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 720px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .main-container {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+        margin-top: -5vh;
+    }
+
+    .main-container .recipe-details h1 {
+        font-size: 2rem;
+    }
+
+    .main-container .recipe-details img {
+        border-radius: 0px;
+        width: 100%;
+        margin-left: -20px;
+    }
+
+   
+    .main-container .preparation .title,
+    .main-container .ingredient .title,
+    .main-container .instruction .title,
+    .main-container .nutrition .title {
+        font-size: 1.5rem;
+    }
+
+    .main-container .instruction .instruction-list li {
+        margin-bottom: 10px;
+        padding-left: 15px;
+    }
+
+    .main-container .nutrition .nutrition-list tr td {
+        font-size: 14px;
+    }
+}
+  
