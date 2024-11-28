@@ -8,6 +8,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [Screenshot](#screenshot)
+    - [Desktop Version](#desktop-version)
+    - [Mobile Version](#mobile-version)
     - [Links](#links)
   - [My process](#my-process)
     - [Built with](#built-with)
@@ -17,7 +19,11 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Screenshot
 
-![](./screenshot.jpg)
+### Desktop Version
+![](./assets/images/screenshot-1.png)
+
+### Mobile Version 
+![](./assets/images/screenshot-2.png)
 
 ### Links
 
